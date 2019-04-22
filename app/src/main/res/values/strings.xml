@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SefiratOmer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="omer_text"> Afle hasadeha moşia hosim mimitkomemim bimineha.Orera et gevurateha ulha lişuata lanu.Amen hen yei ratson.Vaeevor alayih vaereh metboseset bedamayih.Vaomar lah bedamayih hayi.Vaomar lah bedamayih hayi.
+        \nBarehi nafşi et Ad.,Ad.Elo-ay gadalta meod od veadar lavaşta ote or kasamla note şamayim kayeriya.
+        \nVii noam Ad. Elo-enu alenu umaase yadenu konena alenu umaase yadenu koneneu.</string>
+    <string name ="beraha"> </string>
+</resources>
