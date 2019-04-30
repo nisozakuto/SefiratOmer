@@ -6,21 +6,63 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="56dp"
+    android:id="@+id/MainLayout"
     tools:showIn="@layout/app_bar_main">
 
     <android.support.v4.widget.NestedScrollView
-        android:layout_width="0dp"
-        android:layout_height="495dp"
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:fillViewport="true"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteX="0dp">
 
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/LinearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/OmerText"/>
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
+            <TextView
+                android:id="@+id/HalachicTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alahik Zaman Henuz Alinamadi"
+                android:textAlignment="center"
+                android:textSize="8pt"
+                app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/locationText"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:hint="Sehir gir" />
+
+                <Button
+                    android:id="@+id/locationButton"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="Ok"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/OmerText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black" />
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.constraint.ConstraintLayout>
