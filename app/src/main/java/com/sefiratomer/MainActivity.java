@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     private final int REQUEST_LOCATION_PERMISSION = 1;
     String geolocation = "Istanbul";
     double latitude =41.0082, longitude= 28.9784;
-
+//Testing
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
