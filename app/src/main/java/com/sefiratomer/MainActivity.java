@@ -92,6 +92,8 @@ public class MainActivity extends AppCompatActivity
                 Toast.makeText(getApplicationContext(), geolocation, Toast.LENGTH_SHORT).show();
                 //zmanimTimes.Sunrise(latitude, longitude, geolocation);
                 HalachicTimesTextView.setText(zmanimTimes.Sunrise(latitude, longitude,geolocation));
+                //Usage of Fragments for City loader
+                //https://guides.codepath.com/android/creating-and-using-fragments
             }
         });
         // BasicCalc basicCalc = new BasicCalc();
