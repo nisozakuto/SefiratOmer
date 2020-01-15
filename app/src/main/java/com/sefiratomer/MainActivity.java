@@ -91,6 +91,19 @@ public class MainActivity extends AppCompatActivity
                 geolocation = locationText.getText().toString();
                 Toast.makeText(getApplicationContext(), geolocation, Toast.LENGTH_SHORT).show();
                 //zmanimTimes.Sunrise(latitude, longitude, geolocation);
+
+                String locationName = "Lakewood, NJ";
+                double latitude = 40.096; //Lakewood, NJ
+                double longitude = -74.222; //Lakewood, NJ
+                double elevation = 0; //optional elevation
+                TimeZone timeZone = TimeZone.getTimeZone("America/New_York");
+                GeoLocation location = new GeoLocation(locationName, latitude, longitude, elevation, timeZone);
+//Use any of the API's Calendar classes
+//AstronomicalCalendar zCal = new ComplexZmanimCalendar(location);
+//ZmanimCalendar zCal = new ComplexZmanimCalendar(location);
+                ComplexZmanimCalendar zCal = new ComplexZmanimCalendar(location);
+//                Toast.makeText(getApplicationContext(), (CharSequence) zCal,Toast.LENGTH_SHORT).show();
+Log.i("Time", String.valueOf(zCal));
                 HalachicTimesTextView.setText(zmanimTimes.Sunrise(latitude, longitude,geolocation));
                 //Usage of Fragments for City loader
                 //https://guides.codepath.com/android/creating-and-using-fragments
